@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "author": "jigu<https://github.com/youniaogu>",
   "scripts": {
+    "download": "node ./dist/index",
     "watch": "tsc --watch --pretty",
-    "build": "tsc --outDir ./build --pretty --removeComments; chmod +x ./build/index.js",
-    "test": "node ./dist/index"
+    "build": "tsc --pretty --removeComments; chmod +x ./build/index.js",
+    "preinstall": "yarn build"
   },
   "main": "src/index.ts",
   "bin": "build/index.js",
