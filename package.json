@@ -5,11 +5,11 @@
   "scripts": {
     "download": "node ./dist/index",
     "watch": "tsc --watch --pretty",
-    "build": "tsc --pretty --removeComments; chmod +x ./build/index.js",
-    "preinstall": "yarn build"
+    "build": "tsc --pretty --removeComments; chmod +x ./dist/index.js",
+    "predownload": "yarn build"
   },
   "main": "src/index.ts",
-  "bin": "build/index.js",
+  "bin": "dist/index.js",
   "dependencies": {
     "bottleneck": "^2.19.5",
     "chalk": "^5.0.1",
